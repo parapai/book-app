@@ -35,7 +35,7 @@ public class GlobalExceptionHandler {
         ApiResponse<Object> response = ApiResponse.error(
             "500", 
             "Internal Server Error", 
-            "Maaf, terjadi kesalahan pada sistem kami."
+            "Something went wrong"
         );
         return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
     }
